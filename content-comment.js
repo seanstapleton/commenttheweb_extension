@@ -20,6 +20,9 @@
                                         }     
                                      ] 
                               };
-    const commen = document.querySelector(serverResponse.data[0].selector);
+    const comment = document.querySelector(serverResponse.data[0].selector);
+    var selectedText = document.querySelector(serverResponse.data[0].highlighted_text);
+    newSelectedText = <span class = "highlight"> selectedText </span>;
+    var res = str.replace(selectedText,newSelectedText);
     console.log("Content script running...");
-})();
+}})();
