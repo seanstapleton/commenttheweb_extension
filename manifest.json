@@ -3,6 +3,9 @@
     "version": "0.1",
     "description": "An extension to create and view comments on any page on the internet",
     "manifest_version": 2,
+    "permissions": [
+        "https://commenttheweb-server.herokuapp.com/*"
+    ],
     "content_scripts": [
       {
         "matches": ["https://medium.com/*"],

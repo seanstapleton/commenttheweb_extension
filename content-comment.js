@@ -5,6 +5,9 @@
 
 // IIFE format, prevent any variables from being accessed
 // by the global scope
-(function() {
-    console.log("Content script running...");
+(async function() {
+    const currentUrl = location.href;
+    const r = await fetch(`https://commenttheweb-server.herokuapp.com/comments?url=${currentUrl}`);
+    const commentData = await r.json();
+    console.log(commentData);
 })();
