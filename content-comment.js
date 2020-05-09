@@ -20,6 +20,6 @@
                                         }     
                                      ] 
                               };
-    const comment.document.querySelector(serverResponse.data[0].selector);
+    const commen = document.querySelector(serverResponse.data[0].selector);
     console.log("Content script running...");
 })();
